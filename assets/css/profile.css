@@ -1,0 +1,44 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: solid 1px #f85c24;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #f85c24;
+    color: #000;
+    font-weight: bold;
+}
+
+.button img {
+    margin-right: 10px;
+}
+
+.content-area {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.overflow-auto{
+    background-color: transparent !important;
+}
+
