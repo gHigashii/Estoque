@@ -6,7 +6,7 @@ $TamanhoModel = new tamanho($pdo);
 
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['novo_tamanho'])){
     $TamanhoModel->adicionar($_POST['novo_tamanho']);
-    header("Location: painel.php?secao=tamanho");
+    header("Location: ../painel.php?secao=tamanho");
     exit;
 }
 

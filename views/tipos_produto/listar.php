@@ -1,4 +1,4 @@
-<form method="POST" class="mb-4 d-flex">
+<form method="POST" action="controllers/TipoProdutoController.php" class="mb-4 d-flex">
     <input type="text" name="novo_tipo" class="form-control me-2" placeholder="Novo tipo de produto..." required>
     <button type="submit" class="btn btn-success">Adicionar</button>
 </form>

@@ -6,7 +6,7 @@ $tipoprodutoModel = new TipoProduto($pdo);
 
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['novo_tipo'])){
     $tipoprodutoModel->adicionar($_POST['novo_tipo']);
-    header("Location: painel.php?secao=tipoproduto");
+    header("Location: ../painel.php?secao=tipoproduto");
     exit;
 }
 
