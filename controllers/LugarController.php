@@ -6,13 +6,13 @@ $lugarModel = new Lugar($pdo);
 
 if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['novo_lugar'])){
     $lugarModel->adicionar($_POST['novo_lugar']);
-    header("Location: painel.php?secao=lugar");
+    header("Location: ../painel.php?secao=lugar");
     exit;
 }
 
 if(isset($_POST['editar_id'], $_POST['editar_nome'])){
     $lugarModel->editar($_POST['editar_id'], $_POST['editar_nome']);
-    header("Location: painel.php?secao=lugar");
+    header("Location: ../painel.php?secao=lugar");
     exit;
 }
 
@@ -22,5 +22,5 @@ if (isset($_GET['excluir'])) {
     exit;
 }
 
-$lugars = $lugarModel->listar();
+$lugares = $lugarModel->listar();
 require_once __DIR__ . '/../views/lugar/listar.php';

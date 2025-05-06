@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['novo_tipo'])){
 
 if(isset($_POST['editar_id'], $_POST['editar_nome'])){
     $tipoprodutoModel->editar($_POST['editar_id'], $_POST['editar_nome']);
-    header("Location: painel.php?secao=tipoproduto");
+    header("Location: ../painel.php?secao=tipoproduto");
     exit;
 }
 

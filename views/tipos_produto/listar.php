@@ -14,7 +14,7 @@
         <?php foreach ($tipos as $tipo): ?>
             <tr>
                 <td>
-                    <form method="POST" class="d-flex">
+                    <form method="POST" action="controllers/TipoProdutoController.php" class="d-flex">
                         <input type="hidden" name="editar_id" value="<?= $tipo['id_tipoproduto'] ?>">
                         <input type="text" name="editar_nome" class="form-control" value="<?= htmlspecialchars($tipo['nome']) ?>">
                 </td>

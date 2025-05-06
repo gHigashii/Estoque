@@ -15,7 +15,7 @@
         <?php foreach ($tamanhos as $tamanho): ?>
             <tr>
                 <td>
-                    <form method="POST" class="d-flex">
+                    <form method="POST" action="controllers/TamanhoController.php" class="d-flex">
                         <input type="hidden" name="editar_id" value="<?= $tamanho['id_tamanho'] ?>">
                         <input type="text" name="editar_nome" class="form-control" value="<?= htmlspecialchars($tamanho['nome']) ?>">
                 </td>

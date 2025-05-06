@@ -12,7 +12,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['novo_tamanho'])){
 
 if(isset($_POST['editar_id'], $_POST['editar_nome'])){
     $TamanhoModel->editar($_POST['editar_id'], $_POST['editar_nome']);
-    header("Location: painel.php?secao=tamanho");
+    header("Location: ../painel.php?secao=tamanho");
     exit;
 }
 

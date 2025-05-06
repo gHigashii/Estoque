@@ -78,19 +78,22 @@
 
     <script>
         function showContent(selecao) {
-            // Esconde todas as áreas
             const sections = document.querySelectorAll('.content-area');
             sections.forEach(section => section.classList.add('hidden'));
 
-            // Mostra apenas a selecionada
-            const id = selecao.toLowerCase().replace(' ', '_'); // Ex: "tipo produto" → "tipo_produto"
+            const id = selecao.toLowerCase().replace(' ', '_');
             const target = document.getElementById(id);
             if (target) {
                 target.classList.remove('hidden');
             }
         }
-    </script>
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const secao = urlParams.get('secao');
+        if (secao) {
+            showContent(secao);
+        }
+</script>
 
 </body>
 </html>
