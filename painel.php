@@ -19,33 +19,32 @@
             <h2>Gerenciar</h2>
             <div class="col-sm-12 col-md-4 col-lg-2">
                 <div class="button" onclick="showContent('categoria')">
-                    <img src="assets/svg/fields.svg" alt="Ícone de Categoria" width="20">
+                    <img src="assets/icons/categoria.png" alt="Ícone de Categoria" width="20">
                     Categorias
                 </div>
                 <div class="button" onclick="showContent('tipoproduto')">
-                    <img src="assets/svg/fields.svg" alt="Ícone de Tipo produto" width="20">
+                    <img src="assets/icons/produto.png" alt="Ícone de Tipo produto" width="20">
                     Tipo Produto
                 </div>
                 <div class="button" onclick="showContent('tamanho')">
-                    <img src="assets/svg/fields.svg" alt="Ícone de Tamanho" width="20">
+                    <img src="assets/icons/tamanho.png" alt="Ícone de Tamanho" width="20">
                     Tamanho
                 </div>
                 <div class="button" onclick="showContent('lugar')">
-                    <img src="assets/svg/fields.svg" alt="Ícone de Lugar" width="20">
+                    <img src="assets/icons/lugar.png" alt="Ícone de Lugar" width="20">
                     Lugar
                 </div>                
 
                 <hr>
                 <h2>Controle</h2>
-                <!-- Campos para serem tratados depois -->
-                <div class="button" onclick="window.location.href='cadastro.php'">
-                    <img src="assets/svg/fields.svg" alt="Ícone de Editar Campos" width="20">
+                <div class="button" onclick="showContent('produtos')">
+                    <img src="assets/icons/produto.png" alt="Ícone de Produto" width="20">
                     Adicionar Produto
                 </div>
 
                 <hr>
-                <div class="button" onclick="window.location.href='../index.php'">
-                    <img src="assets/svg/fields.svg" alt="Ícone de Editar Campos" width="20">
+                <div class="button" onclick="window.location.href='./index.php'">
+                    <img src="assets/svg/back.svg" alt="Ícone de Editar Campos" width="20">
                     Voltar
                 </div>
             </div>
@@ -72,6 +71,10 @@
                     <h2>Gerenciar Lugares</h2>
                     <?php include './controllers/LugarController.php'; ?>
                 </div>
+                <div id="produtos" class="content-area hidden">
+                    <?php include 'controllers/ProdutoController.php'; ?>
+                </div>
+
             </div>
         </div>
     </div>

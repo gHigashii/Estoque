@@ -59,27 +59,68 @@ $tamanhos = $pdo->query("SELECT * FROM tamanho")->fetchAll();
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!-- Container wrapper -->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="assets/img/logo paito ozinho.png" alt="Logo" height="40" class="d-inline-block align-text-center">
-    </a>
-    <div class="collapse navbar-collapse">
-        <ul class="nav justify-content-center">
-            <li class="nav-item mx-3">
-                <a href="painel.php">A<img src="" alt=""></a>
-            </li>
-        </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Toggle button -->
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
 
-<nav class="navbar fixed-top">
-        <div class="container-fluid">
-            
-            
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img src="assets/img/logo paito ozinho.png" height="45" alt="MDB Logo" loading="lazy"/>
+      </a>
+
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Painel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Brigadeiro</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="link-secondary me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a data-mdb-dropdown-init class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" aria-expanded="false">
+          <img src="assets/svg/edit.svg" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
 
 <!-- Filtros -->
 <div class="container mb-4">

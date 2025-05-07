@@ -21,7 +21,7 @@
                 </td>
                 <td>
                         <button type="submit" class="btn btn-sm btn-primary me-1">Salvar</button>
-                        <a href="controllers/LugarController.php?excluir=<?= $lugar['id_lugar'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Excluir esta categoria?')">Excluir</a>
+                        <a href="controllers/LugarController.php?excluir=<?= $lugar['id_lugar'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Excluir este lugar?')">Excluir</a>
                     </form>
                 </td>
             </tr>
